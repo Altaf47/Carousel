@@ -2,11 +2,39 @@
   box-sizing: border-box;
 }
 
+.slides {
+  height: 66vh;
+  width: 80vh;
+  margin: 15vh auto;
+}
+
 .image {
   height: 66vh;
   width: 80vh;
   border: 1px dashed pink;
-  margin-top: 15vh;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+}
+
+.button.previous {
+  position: absolute;
+  margin-top: 33vh;
+  margin-left: 3rem;
+  color: #bbb;
+  font-size: 3rem;
+}
+
+.button.next {
+  position: absolute;
+  margin-top: 33vh;
+  margin-left: 47rem;
+  color: #bbb;
+  font-size: 3rem;
+}
+
+.button.previous:hover {
+  color: #eee;
+}
+
+.button.next:hover {
+  color: #eee;
 }

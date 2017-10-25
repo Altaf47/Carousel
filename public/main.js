@@ -20,4 +20,21 @@ const render = () => {
   }
 }
 
+const changeSlide = () => {
+  document
+    .querySelector('.slide')
+    .setAttribute('src', `images/${carousel.slides[carousel.current].image}`)
+
+  document.querySelector('.button.previous').addEventListener('click', () => {
+    if (carousel.current === 0) return
+    carousel.current--
+    changeSlide()
+  })
+}
+document.querySelector('.button.next').addEventListener('click', () => {
+  if (carousel.current === carousel.slides.length - 1) return
+  carousel.current++
+  changeSlide()
+})
+
 setInterval(render, 4000)
