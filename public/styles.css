@@ -11,7 +11,6 @@
 .image {
   height: 66vh;
   width: 80vh;
-  border: 1px dashed pink;
   text-align: center;
 }
 
@@ -37,4 +36,31 @@
 
 .button.next:hover {
   color: #eee;
+}
+
+.progress {
+  position: absolute;
+  top: calc(100% / 12 * 9);
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ccc;
+}
+
+.progress li {
+  margin: 0.3rem;
+  font-size: 1rem;
+  display: inline;
+  list-style: none;
+}
+
+.progress {
+  margin: 0;
+  padding: 0;
+}
+
+.progress:hover,
+.button.next:hover,
+.button.previous:hover {
+  color: #eee;
+  cursor: pointer;
 }
